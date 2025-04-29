@@ -1,0 +1,2 @@
+IHSS = sueldo bruto * 4.5%
+RAP = sueldo bruto * 1.5%
