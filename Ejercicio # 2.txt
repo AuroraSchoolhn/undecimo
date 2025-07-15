@@ -1,0 +1,9 @@
+# LIstas en python #
+
+1. Cree una lista (numeros) que contenga los siguientes datos: "Uno" "Dos" "Tres" "Cuatro" "Cinco" 
+2. Muestre por pantalla toda la lista
+3. Muestre solo el numero "Uno" 
+4. Muestre el numero "Tres"
+5. Cree una Cadena de datos:
+cadena = "Primer linea\nSegunda linea"
+print(cadena)
