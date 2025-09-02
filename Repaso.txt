@@ -1,9 +1,0 @@
-1. En una variable guarde la fecha actual
-2. Muestre por pantalla el valor de la variable
-3. Haga una lista de sus 3 equipos de futball preferidos
-4. Muestre por pantalla el primero y el ultimo
-5. Solicite la edad de un estudiante, si la edad es mayor a 18 años 
-  en un mensaje despliegue "Eres mayor de edad" en caso contrario "Eres menor de edad"
-
-6.Si la edad esta entre 3 - 11 es un niño, en caso que este
-   entre 12 - 18 es un adolecente, si esta entre 18 y 21 es un joven.
