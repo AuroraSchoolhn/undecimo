@@ -1,8 +1,0 @@
-Realice las siguientes operaciones matematicas en python
-
-1. defina una variable (multiplo) donde multiplique 50 * 50 y muestre el resultado por pantalla.
-2. defina una variable (suma) donde sume 150 + 450 y muestre el resultado por pantalla.
-3. defina una variable (resta) donde reste 150 - 75 y muestre el resultado por pantalla.
-4. defina una variable (división) donde divida 150 / 2 y muestre el resultado por pantalla.
-5. pida al usuario que ingrese dos numeros y los sume entre si, luego muestre el resultado por pantalla.
-
