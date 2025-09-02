@@ -1,3 +1,0 @@
-Ingrese en el link y resuelva los ejercicios.
-
-https://aprendeconalf.es/docencia/python/ejercicios/condicionales/
