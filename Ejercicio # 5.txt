@@ -1,0 +1,33 @@
+Ciclo while
+El ciclo while en Python ejecuta un bloque de código repetidamente mientras una condición sea verdadera. 
+Su sintaxis es while <condición>:, seguida por el código indentado que se ejecuta, el cual debe modificar 
+la condición para evitar un bucle infinito. Es útil cuando no se sabe de antemano cuántas veces debe 
+repetirse una tarea, ya que la ejecución depende de un estado dinámico. 
+
+contador = 0
+while contador < 5:
+    print(f"El contador es {contador}")
+    contador += 1 # Incrementamos el contador para evitar un bucle infinito
+
+##EJERCICIO DE CALCULADORA
+print('Ejercicio de Calculadora')
+ 
+char = input('Ingrese un letra Q o q para salir ')
+
+while char != 'Q' or 'q':
+         
+    a = float(input('Ingrese un numero: ')) 
+    b = float(input('Ingrese otro numero: ')) 
+ 
+    if char == '+': 
+        sum = a + b 
+        print('La suma es: ', sum , sep = '')
+ 
+    elif char == '-': 
+        difference = a-b 
+        print('La resta es: ', difference, '.', sep = '')
+   
+  ## Haga las operaciones pendietes multiplicacion y division
+ 
+    else:
+        print('Ingrese los signos para la operacion + - * / or %.')
