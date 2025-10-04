@@ -1,0 +1,31 @@
+DEF
+En Python, def es una palabra clave que se utiliza para definir una función, 
+que es un bloque de código reutilizable diseñado para realizar una tarea específica. 
+Para definir una función, se usa def seguido del nombre de la función, paréntesis () y dos puntos :, 
+con el código de la función indentado debajo.
+
+ef nombre_de_la_funcion(parametros):
+    # Bloque de código (cuerpo de la función)
+    # Realiza una tarea
+    return resultado # Opcional
+
+def saludar(nombre): # Define una función llamada 'saludar' que toma un 'nombre' como parámetro
+    print("¡Hola, {nombre}!") # El código indentado es el cuerpo de la función
+
+# Llamar a la función para ejecutarla
+saludar("Mundo") # Esto mostrará "¡Hola, Mundo!" en la consola
+
+
+def aprender_a_programar():
+    print("Puedes aprender a programar")
+
+aprender_a_programar()
+
+def aprender_a_programar():
+    nombre = input("Ingrese su nombre:")
+    # falta una instruccion para que lo muestre por pantalla
+
+
+aprender_a_programar()
+
+  
