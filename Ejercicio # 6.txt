@@ -4,7 +4,7 @@ que es un bloque de código reutilizable diseñado para realizar una tarea espec
 Para definir una función, se usa def seguido del nombre de la función, paréntesis () y dos puntos :, 
 con el código de la función indentado debajo.
 
-ef nombre_de_la_funcion(parametros):
+def nombre_de_la_funcion(parametros):
     # Bloque de código (cuerpo de la función)
     # Realiza una tarea
     return resultado # Opcional
