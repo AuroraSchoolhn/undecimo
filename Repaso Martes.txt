@@ -1,7 +1,0 @@
-Ejercicios
-1. Defina una variable caracter, luego que el resultado se imprima en pantalla
-2. Solicite al usuario ingresar su edad, si es mayor a 17, que muestre un mensaje
- "eres mayor de edad" en caso contrario "eres menor de edad"
-3. Solicite al usuario que ingrese dos numeros, el valor de ambos numeros los debe
-  multiplicar y mostrar el resultado en pantalla.
-4. Utilizando el ciclo for muestre los numeros del 0 al 100
