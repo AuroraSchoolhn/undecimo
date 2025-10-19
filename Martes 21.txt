@@ -1,0 +1,5 @@
+1. Cual es el comando para imprimir por pantalla?
+2. Como se define una variable
+3. Como se crea una lista 
+4. Haga un ejemplo de la funcion IF
+5. Haga un ejemplo con el ciclo For
