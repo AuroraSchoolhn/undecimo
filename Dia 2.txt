@@ -1,0 +1,11 @@
+Radio Button:
+
+    <label for="">Seleccione su sistema operativo preferido</label>
+    <div>
+      <input type="radio" name="os" id="windows" value="" />
+      <label for="windows">Windows</label>
+      <input type="radio" name="os" id="mac" value="" />
+      <label for="mac">Macintosh</label>
+      <input type="radio" name="os" id="lin" value="" />
+      <label for="lin">Linux</label>
+    </div>
