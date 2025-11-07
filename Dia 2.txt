@@ -9,3 +9,11 @@ Radio Button:
       <input type="radio" name="os" id="lin" value="" />
       <label for="lin">Linux</label>
     </div>
+
+Select:
+
+<select id="mySelect">
+  <option value="">Opcion # 1</option>
+  <option value="">Opcion # 2</option>
+  <option value="">Opcion # 3</option>
+</select>
