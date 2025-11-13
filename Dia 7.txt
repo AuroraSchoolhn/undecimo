@@ -1,0 +1,8 @@
+Propiedades de CSS
+Color degradado: 
+background: linear-gradient(#a619f8,#00f2f3);
+
+Fondo transparente en input:
+    background: transparent;
+    border: none;
+    outline: none;
