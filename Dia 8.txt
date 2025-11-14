@@ -1,0 +1,6 @@
+1. Cambie el titulo principal a Registro
+2. El boton "Ingresar"
+3. Debajo del boton un parrafo: "No tiene una cuenta? Registrarse 
+  <p>No tiene una cuenta? <a href="#"> Registrarse </a> </p>
+4. Crear una cuenta nueva (h3)
+5. 
