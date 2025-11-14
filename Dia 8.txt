@@ -1,6 +1,6 @@
-1. Cambie el titulo principal a Registro
-2. El boton "Ingresar"
-3. Debajo del boton un parrafo: "No tiene una cuenta? Registrarse 
-  <p>No tiene una cuenta? <a href="#"> Registrarse </a> </p>
-4. Crear una cuenta nueva (h3)
-5. 
+1. Cambie el titulo principal a Login
+2. Debajo de la etiqueta Recordar, haga un parrafo con la siguiente informacion: No tiene una cuenta? Registrarse (con hinpervinculo)
+3. Cree un nuevo archivo llamado "Registro.html" 
+4. Usando la etiqueta (h3) el titulo sera "REgistro de Usuario"
+5. Los campos que se deben configurar son: Nombre, Correo electronico, Telefono, Fecha de Registro, Ingrese password, Ingrese nuevamente el password
+6. Boton "Guardar"
