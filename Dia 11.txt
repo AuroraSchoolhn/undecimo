@@ -1,0 +1,7 @@
+Practica de Base de Datos MySQL
+https://onecompiler.com/mysql
+
+1. ejercicio # 1
+Crear la base de datos llamada "Usuarios"
+Defina los campos que tiene en el formulario con su
+respectivo tipo de datos.
