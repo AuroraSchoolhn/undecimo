@@ -5,3 +5,10 @@ https://onecompiler.com/mysql
 Crear la base de datos llamada "Usuarios"
 Defina los campos que tiene en el formulario con su
 respectivo tipo de datos.
+
+Nombre
+Apellido
+FEcha
+Email
+Password
+
