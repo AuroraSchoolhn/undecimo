@@ -1,3 +1,9 @@
-if = condicion verdadero o falso
+Las celdas de cantidad, precio y exento se ingresa de forma manual
 
-Subtotal = Cantidad * Precio
+Formaulas:
+
+Impuesto = Funcion SI ( En caso que el exento sea N = (Precio * cantidad * 15%) en caso contrario = 0.00
+Total = (Cantidad * Precio) + Impuesto
+SubTotal = Suma de los totales - total de impuesto (Suma de los Totales / 1.15)
+Impuesto = Suma de todos los impuestos
+TOTAL = Suma de los totales
