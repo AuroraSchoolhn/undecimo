@@ -1,4 +1,4 @@
-Los siguientes alumnos haran la tarea pendiente en clase: la tarea solo tendra un valor de 9 puntos por entregarla tarde.
+Los siguientes alumnos haran la tarea pendiente en clase:  (solo tendra un valor de 9 puntos por entregarla tarde)
 ANDREA PEÑA
 DELMY VELASQUEZ
 HEYLI CASTRO
