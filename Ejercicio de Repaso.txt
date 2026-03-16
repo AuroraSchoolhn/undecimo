@@ -1,0 +1,3 @@
+Copie el siguiente enlace y desarrollo los ejercicios en linea:
+
+https://www.w3schools.com/excel/exercise.php?filename=exercise_syntax1
