@@ -1,0 +1,24 @@
+Ejercicio 1: Los parámetros sep y end
+Que impriman "Python", "es", "genial" en una sola línea de print(), pero usando el parámetro sep para que aparezcan separados por guiones:
+
+Resultado esperado: Python-es-genial
+
+Ejercicio 2: Sin salto de línea
+Que usen dos print() distintos pero que el resultado aparezca todo en una sola línea, "hola mundo"
+
+Ejercicio 3: Caracteres de escape
+Que impriman un texto que incluya un salto de línea y un tabulador dentro del mismo print(), por ejemplo:
+
+Utilice los caracteres \t y \n antes de cada palabra
+
+print("Nombre:\tJuan\nEdad:\t16")
+
+Ejercicio 4: Cadenas multilínea
+Que impriman un pequeño poema o frase de 3 líneas usando un solo print() con comillas triples, en vez de tres print() separados:
+
+print("""Línea 1
+Línea 2
+Línea 3""")
+
+Ejercicio 5: Reto - Dibuja una casa
+Que combinen todo lo anterior para imprimir una figura más compleja con símbolos (por ejemplo una casita), usando varios print() y jugando con espacios:
