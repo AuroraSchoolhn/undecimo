@@ -1,9 +1,9 @@
-Ejercicio 1: Los parámetros sep y end
+Ejercicio 1: 
 Que impriman "Python", "es", "genial" en una sola línea de print(), pero usando el parámetro (-) para que aparezcan separados por guiones:
 
 Resultado esperado: Python-es-genial
 
-Ejercicio 2: Sin salto de línea
+Ejercicio 2: Sin salto de línea: use parametro end=" " al final
 Que usen dos print() distintos pero que el resultado aparezca todo en una sola línea, "hola mundo"
 
 Ejercicio 3: Caracteres de escape
