@@ -22,3 +22,9 @@ Línea 3""")
 
 Ejercicio 5: Reto - Dibuja una casa
 Que combinen todo lo anterior para imprimir una figura más compleja con símbolos (por ejemplo una casita), usando varios print() y jugando con espacios:
+print("   /\\   ")
+print("  /  \\  ")
+print(" /____\\ ")
+print(" |    | ")
+print(" |____| ")
+
