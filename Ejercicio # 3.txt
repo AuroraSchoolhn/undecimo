@@ -1,5 +1,5 @@
 Ejercicio 1: Los parámetros sep y end
-Que impriman "Python", "es", "genial" en una sola línea de print(), pero usando el parámetro sep para que aparezcan separados por guiones:
+Que impriman "Python", "es", "genial" en una sola línea de print(), pero usando el parámetro (-) para que aparezcan separados por guiones:
 
 Resultado esperado: Python-es-genial
 
