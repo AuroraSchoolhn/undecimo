@@ -1,14 +1,13 @@
 import random
 
-# 1. Creamos las dos listas con nombres
-lista1 = ["Ana", "Carlos", "María", "Sofia"]
-lista2 = ["Diego", "Luis", "Elena", "Gabriel"]
+# 1. Completa la listas de amigos
+lista1 
+lista2 
 
-# 2. Mostramos los nombres en pantalla
-print("Nombres en Lista 1:", lista1)
-print("Nombres en Lista 2:", lista2)
+# 2. Mostramos los nombres en pantalla con el comando print
 
-# 3. El alumno escribe su nombre
+
+# 3. El alumno escribe un nombre de la lista1
 mi_nombre = input("\nEscribe tu nombre: ")
 
 # 4. Usamos random.choice() para elegir un amigo al azar de la otra lista
