@@ -1,0 +1,26 @@
+Ejercicio 1: Función sin parámetros
+Objetivo: Crear una función básica que ejecute una acción fija al ser llamada.
+
+Enunciado:
+Crea una función llamada mostrar_bienvenida que no reciba ningún parámetro. 
+Al llamarla, debe imprimir en la consola un mensaje de bienvenida a un sistema 
+ficticio (por ejemplo: "¡Bienvenido al sistema de gestión de tareas!").
+
+
+Ejercicio 2: Función con un parámetro (Nombre del usuario)
+Objetivo: Aprender a pasar datos de entrada a una función para personalizar 
+su comportamiento.
+
+Enunciado:
+Crea una función llamada saludar_usuario que reciba un parámetro llamado nombre. 
+La función debe imprimir un saludo personalizado utilizando ese nombre 
+(por ejemplo: "Hola, Carlos. ¡Qué tengas un excelente día!").
+
+Ejercicio 3: Función con múltiples parámetros (Suma de dos valores)
+Objetivo: Trabajar con funciones que reciben más de un parámetro y devuelven un 
+resultado utilizando return.
+
+Enunciado:
+Crea una función llamada sumar_numeros que reciba dos números como parámetros (a y b). 
+La función debe calcular la suma de ambos valores y retornar el resultado. Luego, 
+almacena el resultado en una variable e imprímelo en pantalla.
