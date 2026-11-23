@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Básico</title>
+    <!-- Conectamos el archivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+
+            <!-- Opción interactiva extra: mostrar contraseña -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="verPassword">
+                <label for="verPassword">Mostrar contraseña</label>
+            </div>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <!-- Aquí aparecerá el mensaje de respuesta -->
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- Conectamos el archivo de JavaScript al final del body -->
+    <script src="script.js"></script>
+</body>
+</html>
