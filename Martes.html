@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Propina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="tarjeta">
+    <h1>Calculadora de Propina</h1>
+
+    <div class="campo">
+      <label for="cuenta">Total de la cuenta ($)</label>
+      <input type="number" id="cuenta" placeholder="0.00" min="0" step="0.01">
+    </div>
+
+    <div class="campo">
+      <label>Selecciona la propina</label>
+      <div class="grupo-botones">
+        <button type="button" class="btn-propina activo" data-porcentaje="10">10%</button>
+        <button type="button" class="btn-propina" data-porcentaje="15">15%</button>
+        <button type="button" class="btn-propina" data-porcentaje="20">20%</button>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label for="personas">Número de personas</label>
+      <input type="number" id="personas" value="1" min="1">
+    </div>
+
+    <section class="resultados">
+      <div class="fila-resultado">
+        <span>Propina por persona:</span>
+        <strong id="propina-persona">$0.00</strong>
+      </div>
+      <div class="fila-resultado total">
+        <span>Total por persona:</span>
+        <strong id="total-persona">$0.00</strong>
+      </div>
+    </section>
+
+    <button type="button" id="btn-limpiar" class="btn-secundario">Reiniciar</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
