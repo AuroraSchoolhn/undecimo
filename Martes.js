@@ -1,10 +1,10 @@
-// 1. Seleccionar elementos del DOM
-const  = document.getElementById('cuenta');
-const  = document.getElementById('personas');
-const  = document.querySelectorAll('.btn-propina');
-const  = document.getElementById('propina-persona');
-const  = document.getElementById('total-persona');
-const  = document.getElementById('btn-limpiar');
+// 1. Seleccionar elementos de las variables
+  = document.getElementById('cuenta');
+  = document.getElementById('personas');
+  = document.querySelectorAll('.btn-propina');
+  = document.getElementById('propina-persona');
+  = document.getElementById('total-persona');
+  = document.getElementById('btn-limpiar');
 
 // Estado inicial
 let porcentajeSeleccionado = 10;
