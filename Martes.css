@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: ;
+  color: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.tarjeta {
+  background: ;
+  width: 100%;
+  max-width: 380px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: ;
+}
+
+.campo {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #475569;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+.grupo-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-propina {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #cbd5e1;
+  background-color: #f8fafc;
+  color: #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-propina:hover {
+  border-color: #2563eb;
+}
+
+.btn-propina.activo {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.resultados {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.fila-resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.fila-resultado:last-child {
+  margin-bottom: 0;
+}
+
+.fila-resultado strong {
+  font-size: 1.3rem;
+  color: #38bdf8;
+}
+
+.fila-resultado.total strong {
+  font-size: 1.6rem;
+  color: #4ade80;
+}
+
+.btn-secundario {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #64748b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secundario:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
