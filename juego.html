@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUUM — FPS Raycasting Retro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-wrapper">
+    <canvas id="screen" width="800" height="500"></canvas>
+    <div id="damage-flash"></div>
+    <div id="pickup-flash"></div>
+    <div id="hud-msg"></div>
+
+    <!-- Barra de Estado Clásica (HUD) -->
+    <div id="hud">
+      <div class="hud-box">
+        <span class="hud-val" id="hud-ammo">50</span>
+        <span class="hud-lbl">MUNICIÓN</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-val" id="hud-health">100%</span>
+        <span class="hud-lbl">SALUD</span>
+      </div>
+      <div class="hud-box weapons-box">
+        <div class="wpn-list">
+          <span id="wpn-1" class="wpn-num">1</span>
+          <span id="wpn-2" class="wpn-num active">2</span>
+          <span id="wpn-3" class="wpn-num">3</span>
+        </div>
+        <span class="hud-lbl">ARMAS</span>
+      </div>
+      <div class="hud-box face-box">
+        <canvas id="face-canvas" width="64" height="64"></canvas>
+      </div>
+      <div class="hud-box">
+        <span class="hud-val" id="hud-armor">0%</span>
+        <span class="hud-lbl">ARMADURA</span>
+      </div>
+      <div class="hud-box keys-box">
+        <div class="keys-icons">
+          <span id="key-yellow" class="key-badge" title="Llave Amarilla">🔑</span>
+          <span id="key-red" class="key-badge" title="Llave Roja">🗝️</span>
+        </div>
+        <span class="hud-lbl">LLAVES</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-val" id="hud-kills">0/0</span>
+        <span class="hud-lbl">BAJAS</span>
+      </div>
+    </div>
+
+    <!-- Pantalla de Inicio / Menú Principal -->
+    <div id="overlay-menu" class="overlay active">
+      <div class="logo">DUUM</div>
+      <p class="subtitle">EDICIÓN INFERNAL 1993 — MOTOR RAYCASTING</p>
+      <div class="menu-buttons">
+        <button id="btn-start" class="doom-btn">▶ INICIAR MISIÓN</button>
+        <button id="btn-audio" class="doom-btn secondary">🔊 SONIDO: ACTIVADO</button>
+      </div>
+      <div class="controls-help">
+        <div><strong>WASD / Flechas:</strong> Moverse</div>
+        <div><strong>Ratón / Q-E:</strong> Girar</div>
+        <div><strong>Clic / Espacio:</strong> Disparar</div>
+        <div><strong>F / E:</strong> Abrir Puertas</div>
+        <div><strong>1 - 2 - 3:</strong> Cambiar Arma</div>
+        <div><strong>M / Tab:</strong> Minimapa</div>
+      </div>
+    </div>
+
+    <!-- Pantalla de Fin de Nivel / Victoria / Game Over -->
+    <div id="overlay-end" class="overlay">
+      <h1 id="end-title" class="logo small">SECTOR DESPEJADO</h1>
+      <p id="end-subtitle" class="subtitle">Has sobrevivido a la horda</p>
+      <div class="stats-panel">
+        <p>ENEMIGOS ELIMINADOS: <span id="stat-kills">0%</span></p>
+        <p>NIVEL ACTUAL: <span id="stat-level">1</span></p>
+      </div>
+      <button id="btn-next" class="doom-btn">SIGUIENTE NIVEL ▶</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
