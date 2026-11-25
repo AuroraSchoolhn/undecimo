@@ -1,0 +1,9 @@
+boton.addEventListener("click", function() {
+  if (input.value.trim() === "") {
+    input.style.borderColor = "red";
+    boton.textContent = "Escribe algo";
+  } else {
+    input.style.borderColor = "green";
+    boton.textContent = "Listo: " + input.value;
+  }
+});
