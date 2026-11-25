@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-color: #09090b;
+  color: #e4e4e7;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#game-wrapper {
+  position: relative;
+  width: 800px;
+  height: 590px;
+  border: 4px solid #3f3f46;
+  box-shadow: 0 0 40px rgba(220, 38, 38, 0.35);
+  background: #000;
+}
+
+#screen {
+  display: block;
+  width: 800px;
+  height: 500px;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+
+/* Destellos de pantalla */
+#damage-flash,
+#pickup-flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 500px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease-out;
+}
+
+#damage-flash {
+  background: rgba(220, 20, 20, 0.55);
+}
+
+#pickup-flash {
+  background: rgba(250, 204, 21, 0.25);
+}
+
+#hud-msg {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: #facc15;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000;
+  pointer-events: none;
+  letter-spacing: 1px;
+}
+
+/* Barra de estado inferior (HUD) */
+#hud {
+  width: 800px;
+  height: 82px;
+  background: repeating-linear-gradient(
+    90deg,
+    #27272a,
+    #27272a 12px,
+    #1f1f23 12px,
+    #1f1f23 24px
+  );
+  border-top: 4px solid #52525b;
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 1fr 90px 1.1fr 0.9fr 1.1fr;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 6px;
+}
+
+.hud-box {
+  height: 68px;
+  background: #141417;
+  border: 2px inset #52525b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hud-val {
+  font-size: 26px;
+  font-weight: 900;
+  color: #ef4444;
+  text-shadow: 2px 2px 0 #000;
+  line-height: 1.1;
+}
+
+.hud-lbl {
+  font-size: 11px;
+  color: #a1a1aa;
+  font-weight: bold;
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
+
+.wpn-list {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wpn-num {
+  color: #52525b;
+  padding: 1px 4px;
+}
+
+.wpn-num.owned {
+  color: #d4d4d8;
+}
+
+.wpn-num.active {
+  color: #facc15;
+  text-shadow: 0 0 6px #eab308;
+}
+
+.face-box {
+  padding: 0;
+  background: #09090b;
+}
+
+#face-canvas {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+}
+
+.keys-icons {
+  display: flex;
+  gap: 6px;
+  font-size: 18px;
+}
+
+.key-badge {
+  opacity: 0.18;
+  filter: grayscale(1);
+}
+
+.key-badge.collected {
+  opacity: 1;
+  filter: none;
+}
+
+/* Overlays de menú */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(45, 5, 5, 0.94), rgba(10, 10, 12, 0.98));
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  z-index: 10;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.logo {
+  font-size: 88px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: #dc2626;
+  text-shadow: 0 4px 0 #7f1d1d, 0 8px 0 #450a0a, 0 0 25px rgba(239, 68, 68, 0.7);
+  margin-bottom: 6px;
+}
+
+.logo.small {
+  font-size: 46px;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  color: #fbbf24;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.doom-btn {
+  background: #991b1b;
+  color: #fef2f2;
+  border: 3px solid #ef4444;
+  padding: 12px 32px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 0 #450a0a;
+  transition: transform 0.08s, background 0.15s;
+}
+
+.doom-btn:hover {
+  background: #b91c1c;
+  transform: scale(1.03);
+}
+
+.doom-btn:active {
+  transform: translateY(2px);
+}
+
+.doom-btn.secondary {
+  background: #27272a;
+  border-color: #71717a;
+  box-shadow: 0 4px 0 #18181b;
+  font-size: 14px;
+  padding: 9px 20px;
+}
+
+.controls-help {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid #3f3f46;
+  padding: 14px 22px;
+  font-size: 13px;
+  color: #d4d4d8;
+  text-align: left;
+}
+
+.controls-help strong {
+  color: #f87171;
+}
+
+.stats-panel {
+  background: rgba(0, 0, 0, 0.65);
+  border: 2px solid #52525b;
+  padding: 18px 36px;
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.stats-panel span {
+  color: #facc15;
+  font-weight: bold;
+}
