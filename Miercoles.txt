@@ -1,9 +1,31 @@
-boton.addEventListener("click", function() {
-  if (input.value.trim() === "") {
-    input.style.borderColor = "red";
-    boton.textContent = "Escribe algo";
-  } else {
-    input.style.borderColor = "green";
-    boton.textContent = "Listo: " + input.value;
+const form = document.getElementById("formDato");
+const input = document.getElementById("txtDato");
+const mensaje = document.getElementById("msgDato");
+
+function mostrarEstado(estado, texto) {
+  input.classList.remove("error", "valido");
+  mensaje.classList.remove("error", "valido");
+  if (estado) {
+    input.classList.add(estado);
+    mensaje.classList.add(estado);
   }
+  input.setAttribute("aria-invalid", estado === "error");
+  mensaje.textContent = texto;
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const valor = input.value.trim();
+
+  if (valor === "") {
+    mostrarEstado("error", "Escribe algo antes de continuar.");
+    input.focus();
+  } else {
+    mostrarEstado("valido", "Listo: " + valor);
+  }
+});
+
+// Quita el error en cuanto el usuario empieza a escribir
+input.addEventListener("input", () => {
+  if (input.classList.contains("error")) mostrarEstado(null, "");
 });
